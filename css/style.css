@@ -1,0 +1,883 @@
+/** VARIABLES GENERALES **/
+
+:root{
+    --fuentePrincipal: 'Noto Sans', sans-serif;
+    --black: 800;
+    --bold: 700;
+    --semiBold: 600;
+    --regular: 400;
+    --medium: 500;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
+
+button{
+    background-color: white;
+    color: #003468;
+    border-radius: 20px;
+    padding: 15px;
+    font-family: var(--fuentePrincipal);
+    cursor: pointer;
+}
+
+/** HOME **/
+
+    /** HEADER **/
+
+.header-overlay{
+    background-image: url(https://s3-alpha-sig.figma.com/img/26fb/b60c/f76160fec1f0c322f9756032347d0d1a?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BY3hNWuQgAyxbwjQvCx5MudRqR0nGSVzYYkhr0KczjDo1bJm-Bojawy7Q3-mOuOXsx5CWRXpwFnb0ujOzaVBSnJn3aPV3Vx-END9pzePU~ge9O5MxcD26Nqg-1~FN1msF78K7PaHGRFQl-1zJPiBZTxae~FxQPUGMISVn1DPHirRWsUuQgL2jH6elAVLizWbTxoR18hpQR2LBoIO1P9SyxNiRcSTs3XgKZMdNfpqcED4ytgjssQopFLw3E-zSYBwKdknFKB5f3psOrjKRXkRpSejNTjPcczH4lzfX4UWD6SGktyajnXe97rI8RVtLXLuqEBoc5wvw0urht3QnmbtaQ__);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 873px;
+}
+
+.header-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top right, #0c71c3, #FC249C); 
+    opacity: 0.7;
+    pointer-events: none; /* Para que el overlay no interfiera con los clics en el contenido */
+    height: 873px;
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    height: 873px;
+}
+
+.barra{
+    display: flex;
+    height: 142px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.barra-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.barra .icono img{
+    width: 206px;
+    height: 58px;
+}
+
+    /** NAVEGACIÓN **/
+
+.navegacion {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
+
+.navegacion ul{
+    display: flex;
+    list-style: none;
+}
+
+.navegacion ul li a{
+    margin-right: 2rem;
+}
+
+.navegacion ul li:last-child a{
+    margin-right: 0;
+}
+
+.navegacion2 ul{
+    display: flex;
+    list-style: none;
+}
+
+.navegacion2 ul li a{
+    margin-right: 5rem;
+    text-decoration: none;
+    font-size: 17px;
+    color:white;
+}
+
+.navegacion2 ul li:last-child a{
+    margin-right: 0;
+}
+
+/** INTRO **/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 8rem auto;
+}
+
+.intro .boton{
+    margin-top: 3rem;
+}
+
+.txt p, h1{
+    text-align: center;
+    color: white;
+}
+
+.txt .p1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.txt h1{
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: var(--black);
+}
+
+.txt .div-p2{
+    width: 690px;
+    margin: 0 auto;
+}
+
+.txt .p2{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.intro .boton{
+    font-size: 18px;
+    font-weight: 600;
+    height: 48px;
+    width: 185px;
+}
+
+.intro-2{
+    height: 14%;
+    width: 60%;
+    position: absolute;
+    bottom: -7%;
+    left: 20%;
+}
+
+.intro-2 .tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 25px 75px;
+    background-color: #003468;
+}
+
+.intro-2 .tags .tag .txt p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro-2 .tags .tag .txt-2 p{
+    font-size: 18px;
+    font-weight: var(--regular);
+    color: white;
+}
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag:last-child {
+    margin-right: 0;
+}
+ 
+/** MARCHA **/
+
+.marcha{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20rem 2rem;
+}
+
+.texto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto .parrafo1 .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+    line-height: 1;
+}
+
+.texto .parrafo1 .txt span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+}
+
+.texto .parrafo2 .txt{
+    color: black;
+    font-weight: var(--regular);
+    font-size: 25px;
+}
+
+.texto .parrafo2 span{
+    font-weight: bold;
+}
+
+.texto .parrafo2{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.texto button{
+    width: 210px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: var(--semiBold);
+    color: white;
+    background-color: #003468;
+    padding: 10px;
+}
+
+.texto .imagen{
+    position: absolute;
+    top: -13rem;
+    left: 22rem;
+}
+
+.texto .imagen img{
+    width: 811px;
+    height: 811px;
+}
+
+    /** IFRAME **/
+
+        /* Contenedor */
+        .iframe-container {
+            width: 100%; /* Ajusta el tamaño según tu diseño */
+            height: 551px;
+            border-radius: 20px; /* Bordes redondeados */
+            overflow: hidden; /* Evitar que el contenido sobresalga */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra */
+            background-color: #fff; /* Fondo blanco */
+        }
+  
+        /* Estilo*/
+        .iframe {
+            width: 100%; /* Asegura que ocupe todo el ancho */
+            height: 100%; /* Asegura que ocupe toda la altura */
+            border: none; /* Quita los bordes del iframe */
+        }
+
+/** GESTIONES **/
+
+.gestiones .titulo{
+    width: 46%;
+    margin: 0 auto;
+}
+
+.gestiones .titulo .txt{
+    font-size: 45px;
+    text-align: center;
+    font-weight: var(--black);
+    line-height: 1;
+}
+
+.gestiones .titulo .txt span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+}
+
+    /** GRID **/
+
+.gestiones-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    margin: 53px 2rem 0 2rem;
+}
+
+    /** TARJETA **/
+
+.gestiones-grid .tarjeta{
+    width: 100%;
+    height: 283px;
+    position: relative;
+}
+
+.gestiones .tarjeta .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top right, #0c71c3, #003468);
+    z-index: 1;
+    pointer-events: none; /* Para que el overlay no interfiera con los clics en el contenido */
+    width: 100%;
+    height: 283px;
+    border-radius: 10px;
+}
+
+.gestiones .tarjeta .div{
+    width: 400px;
+    margin: 5rem auto 0 auto;
+}
+
+.gestiones .tarjeta .txt{
+    position: relative; 
+    z-index: 2;
+    color: white;
+    font-weight: var(--bold);
+    font-size: 26px;
+    text-align: center;
+}
+
+.gestiones .tarjeta .div-2{
+    width: 400px;
+    margin: 5rem auto 0 auto;
+    visibility: hidden;
+    opacity: 0; 
+}
+
+.gestiones .tarjeta .txt-2{
+    font-size: 20px;
+    color: white;
+    font-weight: var(--regular);
+    z-index: 2;
+    position: relative;
+    text-align: left;
+}
+
+.gestiones-grid .tarjeta{
+    width: 100%;
+    height: 283px;
+    border-radius: 10px;
+    position: relative;    
+}
+
+.tarjeta1, .tarjeta2, .tarjeta6{
+    background-image: url(../img/f76160fec1f0c322f9756032347d0d1a.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.tarjeta3, .tarjeta4{
+    background-image: url(../img/bruno-nascimento-PHIgYUGQPvU-unsplash1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.tarjeta5{
+    background-image: url(../img/zac-ong-RYvOI54rmPw-unsplash1.png);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.gestiones .tarjeta .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #003468;
+    z-index: 1;
+    opacity: 0.7;
+    pointer-events: none; /* Para que el overlay no interfiera con los clics en el contenido */
+    width: 100%;
+    height: 283px;
+    border-radius: 10px;
+}
+
+.gestiones .tarjeta .div{
+    width: 400px;
+    margin: 20rem auto 0 auto;
+}
+
+.gestiones .tarjeta .txt{
+    position: relative; 
+    z-index: 2;
+    color: white;
+    font-weight: var(--bold);
+    font-size: 26px;
+    text-align: left;
+}
+
+    /** HOVER **/
+
+.gestiones-grid .tarjeta:hover {
+    background-image: none; 
+    cursor: pointer;
+}
+
+.gestiones-grid .tarjeta:hover .overlay {
+    background-image: linear-gradient(to top right, #0c71c3, #003468);
+    opacity: 1;
+}
+
+.gestiones-grid .tarjeta:hover .div {
+    margin: 5rem auto 0 auto; 
+}
+
+.gestiones-grid .tarjeta:hover .div-2 {
+    visibility: visible; 
+    opacity: 1;  
+}
+
+/** CLIENTES **/
+
+.clientes{
+    margin: 20rem 2rem;
+}
+
+.clientes .titulo{
+    width: 541px;
+}
+
+.clientes .titulo .txt{
+    font-size: 45px;
+    text-align: left;
+    font-weight: var(--black);
+    line-height: 1;
+}
+
+.clientes .titulo .txt span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+}
+
+    /** BOCADILLOS **/
+
+.dialogo-contenedor {
+    overflow: hidden; 
+    width: 95%;
+    margin: 5rem auto;
+    background-color: #fff;
+}
+
+.dialogo-contenedor-inner {
+    display: flex; 
+    flex-direction: row;
+    width: calc(100% * 4); 
+    gap: 2%;
+}
+
+.bocadillo {
+    transition: transform 0.5s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    height: 220px;
+    position: relative;
+    margin: 0;
+    width: 4%;
+}
+
+.bocadillo .txt {
+    font-size: 16px;
+    font-weight: var(--regular);
+}
+
+.estrella{
+    font-size: 30px; 
+    color: #FFC107;  
+}
+
+    /** AUTORES **/
+
+.autor .contenedor{
+    overflow: hidden;
+    width: 95%;
+    margin: 5rem auto;
+}
+
+.autor-contenedor-inner {
+    display: flex; 
+    flex-direction: row;
+    width: calc(100% * 4); 
+    gap: 16rem;
+}
+
+.autor .contenedor-2{
+    transition: transform 0.5s ease-in-out; 
+    display: flex;
+    flex-direction: row;
+}
+
+.autor .contenedor img{
+    border-radius: 50%;
+}
+
+.autor .txt{
+    width: 190px;
+    margin-left: 1rem;
+}
+
+.autor .contenedor h2{
+    font-size: 17px;
+    font-weight: var(--bold);
+    color: #003468;
+    text-align: left;
+}
+
+.autor .contenedor p{
+    font-size: 14px;
+    font-weight: var(--regular);
+    color: black;
+    text-align: left;
+}
+
+/** CONTRATAR **/
+
+.contratar{
+    margin: 20rem 2rem;
+}
+
+.contratar .titulo{
+    width: 900px;
+}
+
+.contratar .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contratar .titulo .txt{
+    font-size: 45px;
+    font-weight: var(--bold);
+}
+
+.contratar .botones{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.boton1{
+    background-color: #003468;
+    color: #fff;
+}
+
+.boton2{
+    background-color: #0c71c3;
+    color: #fff;
+}
+
+.contratar .contenedor-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-2 .imagenes-texto img{
+    width: 111px;
+    height: 111px;
+}
+
+.texto h2{
+    font-size: 20px;
+    font-weight: var(--bold);
+    color: #003468;
+}
+
+.texto p{
+    font-size: 18px;
+    font-weight: var(--regular);
+    color: #003468;
+}
+
+.contenedor-2 .imagenes-texto .texto{
+    width: 289px;
+}
+
+.imagenes-texto{
+    margin: 5rem auto;
+}
+
+.texto hr{
+    border: none; 
+    height: 2px; 
+    background-color: #003468;
+    width: 12rem;
+    margin: 1rem 0;
+}
+
+.contratar .contenedor .botones .boton1, .boton2{
+    width: 210px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: var(--semiBold);
+    padding: 10px;
+}
+
+/** ORGANIZAR **/
+
+.organizar .titulo{
+    margin: 20rem auto 0 auto;
+    width: 40%;
+}
+
+.organizar .titulo .parrafo{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.organizar .titulo .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+    text-align: center;
+}
+
+.organizar .titulo .txt-2{
+    color: black;
+    font-weight: var(--regular);
+    font-size: 18px;
+    text-align: center;
+}
+
+.organizar .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+}
+
+    /** IMÁGENES **/
+
+.organizar .contenedor-imagenes{
+    margin: 0 2rem;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-imagenes .imagen{
+    width: 100%;
+    height: 490px;
+    position: relative;
+    padding: 15px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+}
+
+.contenedor-imagenes .imagen .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.7;
+    pointer-events: none; /* Para que el overlay no interfiera con los clics en el contenido */
+    width: 100%;
+    height: 490px;
+    border-radius: 0px;
+}
+
+.contenedor-imagenes .imagen1 .overlay{
+    background-image: linear-gradient(to top right, #003468, #002C58);
+}
+
+.contenedor-imagenes .imagen2 .overlay{
+    background-image: linear-gradient(to top right, #0C71C3, #002C58);
+}
+
+.contenedor-imagenes .imagen3 .overlay{
+    background-color: #FC249C;
+}
+
+.contenedor-imagenes .imagen4 .overlay{
+    background-image: linear-gradient(to top right, #003468, #002C58);
+}
+
+.imagen1, .imagen2, .imagen4{
+    background-image: url(../img/miguel-a-amutio-TqOFeBqnqrI-unsplash1.png);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.imagen3{
+    background-image: url(../img/bruno-nascimento-PHIgYUGQPvU-unsplash1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.contenedor-imagenes .imagen .div{
+    position: relative;
+    z-index: 2;
+}
+
+.contenedor-imagenes .imagen .div-2{
+    position: relative;
+    z-index: 2;
+} 
+
+.contenedor-imagenes .imagen .div .txt{
+    font-size: 40px;
+    font-weight: var(--bold);
+    color: #fff;
+} 
+
+.contenedor-imagenes .imagen .div-2 .txt-2{
+    font-size: 16px;
+    font-weight: var(--regular);
+    color: #fff;
+} 
+
+/** EVENTOS **/
+
+.eventos .titulo{
+    margin: 20rem auto 0 auto;
+    width: 40%;
+}
+
+.eventos .titulo .txt{
+    color: black;
+    font-weight: var(--medium);
+    font-size: 30px;
+    text-align: center;
+}
+
+.eventos .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+    font-size: 45px;
+    font-weight: var(--black);
+}
+
+    /** LOGOS **/
+.eventos .logos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 2rem;
+    margin: 3rem auto;
+    width: 50%;
+}
+
+.eventos .logos .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/** GESTIÓN **/
+
+.gestion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50rem;
+    margin: 20rem 2rem 0 2rem;
+    gap: 16rem;
+}
+
+.gestion .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5rem auto;
+    gap: 3rem;
+}
+
+.gestion .titulo .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+}
+
+.gestion .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+    font-size: 45px;
+    font-weight: var(--black);
+}
+
+.gestion .parrafo p{
+    font-size: 18px;
+    font-weight: var(--regular);
+}
+
+.gestion .texto button{
+    width: 33rem;
+    height: 5rem;
+}
+
+.gestion .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+/** PROMOCIÓN **/
+
+.promocion{
+    margin: 20rem auto 0 auto;
+    width: 40%;
+}
+
+.promocion .texto .titulo .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+    text-align: center;
+}
+
+.promocion .texto .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+    font-size: 45px;
+    font-weight: var(--black);
+}
+
+.promocion .texto .parrafo p{
+    font-size: 18px;
+    font-weight: var(--regular);
+    text-align: center;
+}
+
+.promocion .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.promocion .texto button{
+    width: 28rem;
+}
