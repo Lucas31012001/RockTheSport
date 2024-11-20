@@ -808,7 +808,6 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5rem auto;
     gap: 3rem;
 }
 
