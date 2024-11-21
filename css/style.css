@@ -482,6 +482,7 @@ button{
     flex-direction: row;
     width: calc(100% * 4); 
     gap: 2%;
+    padding: 1rem;
 }
 
 .bocadillo {
@@ -496,7 +497,7 @@ button{
     height: 220px;
     position: relative;
     margin: 0;
-    width: 4%;
+    width: 5%;
 }
 
 .bocadillo .txt {
@@ -521,13 +522,15 @@ button{
     display: flex; 
     flex-direction: row;
     width: calc(100% * 4); 
-    gap: 16rem;
+    gap: 2%;
 }
 
 .autor .contenedor-2{
     transition: transform 0.5s ease-in-out; 
     display: flex;
     flex-direction: row;
+    width: 5%;
+
 }
 
 .autor .contenedor img{
@@ -620,7 +623,7 @@ button{
 }
 
 .imagenes-texto{
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
 }
 
 .texto hr{
@@ -880,3 +883,260 @@ button{
 .promocion .texto button{
     width: 28rem;
 }
+
+/** MATERIAL **/
+
+.material{
+    margin: 20rem 2rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25rem;
+}
+
+.material .texto .titulo .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+}
+
+.material .texto .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+    font-size: 45px;
+    font-weight: var(--black);
+}
+
+.material .texto .parrafo p{
+    color: black;
+    font-size: 18px;
+    font-weight: var(--regular);
+}
+
+.material .texto .parrafo2 ul{
+    font-size: 18px;
+    font-weight: var(--regular);
+    list-style-position: inside; /* Los puntos se alinean dentro del margen */
+}
+
+.material .caja1 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 3rem;
+}
+
+.material .caja1 .texto button{
+    width: 322px;
+}
+
+.material .caja2 img{
+    border-radius: 30px;
+}
+
+/** APP **/
+
+.app{
+    margin: 20rem 2rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25rem;
+}
+
+.app .caja2 .texto .titulo .txt{
+    color: black;
+    font-weight: var(--black);
+    font-size: 45px;
+}
+
+.app .caja2 .texto .titulo span{
+    background-image: linear-gradient(to top right, #0c71c3, #FC249C);
+    -webkit-background-clip: text; /* Esto hace que el fondo se aplique al texto */
+    color: transparent; /* Hace el texto transparente para que se vea solo el gradiente */
+    font-size: 45px;
+    font-weight: var(--black);
+}
+
+.app .caja2 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 3rem;
+}
+
+.app .caja2 .texto button{
+    width: 322px;
+}
+
+/** AYUDA **/
+
+.ayuda{
+    margin: 20rem 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: url('../img/sporlab-XiZ7pRvCzro-unsplash\ 1.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.ayuda .caja1 .texto .titulo .txt{
+    color: white;
+    font-weight: var(--black);
+    font-size: 45px;
+}
+
+.ayuda .texto .parrafo p{
+    color: white;
+    font-size: 18px;
+    font-weight: var(--regular);
+}
+
+.ayuda .caja1 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 3rem;
+}
+
+.ayuda .caja1 .texto button{
+    width: 80%;
+    background-color: white;
+    color: #003468;
+}
+
+.ayuda .caja1 .texto{
+    padding: 2rem;
+}
+
+.ayuda .caja2{
+    max-width: 100%;
+    height: 40rem;
+    position: relative;
+}
+
+.ayuda .caja1{
+    position: relative;
+}
+
+.ayuda .caja1 .overlay{
+    background-image: linear-gradient(to top right, #0c71c3, #003468);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ayuda .caja2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 113, 195, 0.7);
+}
+
+/** FOOTER **/
+
+footer{
+    background-color: black;
+    height: 33rem;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .div .icono img{
+    width: 206px;
+    height: 58px;
+}
+
+.circulo {
+    width: 30px; 
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: white; 
+    border-radius: 50%; 
+    font-size: 20px; 
+    transition: transform 0.3s ease; 
+}
+
+.circulo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.circulo i {
+    color: black;
+}
+
+footer .contenedor .iconos{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+footer .contenedor .parrafo .txt{
+    color: white;
+    font-size: 15px;
+    font-weight: var(--regular);
+}
+
+footer .contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 5rem 2rem;
+    width: 27%;
+}
+
+footer .contenedor-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 10rem 2rem 10rem 60rem;
+}
+
+footer .contenedor-2 div p{
+    color: white;
+    font-size: 15px;
+    font-weight: var(--regular);
+}
+
+footer .contenedor-2 .div{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/** FINAL **/
+
+.final{
+    background-color: black;
+    height: 10rem;
+    padding: 5rem 2rem;
+}
+
+.final .linea {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.final .txt{
+    padding: 1rem;
+}
+
+.final .txt p{
+    color: white;
+    font-size: 15px;
+    font-weight: var(--regular);
+}
+
+

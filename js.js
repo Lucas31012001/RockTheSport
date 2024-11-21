@@ -10,7 +10,7 @@ function mostrarComentario(index) {
     });
 
     contenedores.forEach((contenedor) => {
-        contenedor.style.transform = `translateX(-${index * 111}%)`; 
+        contenedor.style.transform = `translateX(-${index * 100}%)`; 
     });
 }
 
